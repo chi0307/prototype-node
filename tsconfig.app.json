@@ -1,7 +1,7 @@
 {
   "extends": ["@tsconfig/node22/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
   "include": ["env.d.ts", "src/**/*"],
-  "exclude": ["dist"],
+  "exclude": ["dist", "*.spec.ts", "*.test.ts", "__dirname/test/*", "src/test/**/*"],
   "compilerOptions": {
     "lib": ["ESNext"], // 使用 ESNext 標準庫（例如支援最新的 `Promise.allSettled` 等功能）
     "composite": true, // 啟用增量編譯，生成 `.tsbuildinfo` 文件來加快重建速度
