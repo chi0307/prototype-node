@@ -20,7 +20,12 @@
     "declaration": true, // 生成 `.d.ts` 型別聲明檔案
     "declarationMap": true, // 生成型別檔案對應的 `.map` 文件，方便除錯時跳轉回原始 `.ts`
     "forceConsistentCasingInFileNames": true, // 強制檔案引用的大小寫一致，避免跨平台路徑大小寫錯誤
-    "resolveJsonModule": true // 允許引入 `.json` 檔案作為模組
+    "resolveJsonModule": true, // 允許引入 `.json` 檔案作為模組
+    "plugins": [
+      {
+        "transform": "typia/lib/transform"
+      }
+    ]
   },
   "tsc-alias": {
     "resolveFullPaths": true
