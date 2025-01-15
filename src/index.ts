@@ -1,4 +1,4 @@
-import { b } from '@/example';
+import { b } from '@/example'
 
-const a: string = 'AAA';
-console.log(a, b);
+const a = 'AAA'
+console.log(a, b)
