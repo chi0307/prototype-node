@@ -1,11 +1,25 @@
 {
   "name": "prototype-node",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clear": "rm -rf dist",
+    "build": "pnpm run clear && pnpm run build-only",
+    "build-only": "tsc --build --force && tsc-alias",
+    "start": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/node": "^22.10.6",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.7.3"
+  }
 }
