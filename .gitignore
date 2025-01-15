@@ -3,6 +3,8 @@ dist
 .DS_Store
 *.tsbuildinfo
 *.log
+.jest-cache
+coverage
 
 
 !.gitkeep

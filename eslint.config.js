@@ -82,6 +82,12 @@ export default tsEslint.config(
     },
   },
   {
-    ignores: ['**/dist/*', 'eslint.config.js', '*.timestamp-*.mjs'],
+    ignores: [
+      '**/dist/*',
+      'eslint.config.js',
+      '*.timestamp-*.mjs',
+      'jest.config.cjs',
+      '**/coverage/*',
+    ],
   },
 )
