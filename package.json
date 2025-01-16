@@ -7,7 +7,10 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "clear": "rm -rf dist coverage",
+    "clear": "rm -rf dist coverage typia-generated",
+    "dev:typia": "typia generate --project tsconfig.app.json --input src --output typia-generated",
+    "dev:start": "tsx --tsconfig ./tsconfig.app.json typia-generated/index.ts",
+    "dev": "nodemon --watch src --ext ts --exec \"pnpm run dev:typia && pnpm run dev:start\"",
     "build": "pnpm run clear && pnpm run build-only",
     "build-only": "tsc --build --force tsconfig.app.json && tsc-alias -p tsconfig.app.json",
     "start": "node dist/index.js",
@@ -36,10 +39,12 @@
     "eslint-plugin-prettier": "^5.2.2",
     "eslint-plugin-security": "^3.0.1",
     "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "ts-patch": "^3.3.0",
     "tsc-alias": "^1.8.10",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.20.0"
   },
