@@ -10,7 +10,7 @@
     "clear": "rm -rf dist coverage typia-generated",
     "dev:typia": "typia generate --project tsconfig.app.json --input src --output typia-generated",
     "dev:start": "tsx --tsconfig ./tsconfig.app.json typia-generated/index.ts",
-    "dev": "nodemon --watch src --ext ts --exec \"pnpm run dev:typia && pnpm run dev:start\"",
+    "dev": "nodemon --delay 3 --watch src --ext ts --exec \"pnpm run dev:typia && pnpm run dev:start\"",
     "build": "pnpm run clear && pnpm run build-only",
     "build-only": "tsc --build --force tsconfig.app.json && tsc-alias -p tsconfig.app.json",
     "start": "node dist/index.js",
