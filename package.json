@@ -23,9 +23,9 @@
     "prepare": "ts-patch install && typia patch",
     "upgrade-packages": "ncu --doctor -u --doctorInstall \"pnpm install\" --doctorTest \"run-p check test\" --peer"
   },
-  "author": "",
+  "author": "Junchi Wang <benson26365156@gmail.com> (https://chi0307.github.io)",
   "license": "ISC",
-  "description": "",
+  "description": "A prototype Node.js application with modern development tooling.",
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@tsconfig/node22": "^22.0.0",
@@ -54,5 +54,12 @@
   "dependencies": {
     "axios": "^1.7.9",
     "typia": "^7.6.0"
-  }
+  },
+  "keywords": [
+    "Node.js",
+    "TypeScript",
+    "typia",
+    "prototype",
+    "axios"
+  ]
 }
