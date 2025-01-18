@@ -6,7 +6,7 @@ module.exports = {
       tsconfig: './tsconfig.test.json',
     },
   },
-  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/generated/'],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', '/typia-generated/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
