@@ -88,6 +88,7 @@ export default tsEslint.config(
       '*.timestamp-*.mjs',
       'jest.config.cjs',
       '**/coverage/*',
+      "src/graphql/**/generated.*"
     ],
   },
 )
