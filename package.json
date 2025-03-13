@@ -34,6 +34,7 @@
   "description": "A prototype Node.js application with modern development tooling.",
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
+    "@eslint/js": "^9.22.0",
     "@tsconfig/node22": "^22.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.14",
