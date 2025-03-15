@@ -38,12 +38,12 @@
     "@tsconfig/node22": "^22.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.13.10",
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
-    "eslint-import-resolver-typescript": "^3.8.3",
+    "eslint-import-resolver-typescript": "^3.8.7",
     "eslint-plugin-import-x": "^4.6.1",
-    "eslint-plugin-perfectionist": "^4.9.0",
+    "eslint-plugin-perfectionist": "^4.10.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-security": "^3.0.1",
     "jest": "^29.7.0",
@@ -56,13 +56,13 @@
     "tsc-alias": "^1.8.11",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.0"
+    "typescript-eslint": "^8.26.1"
   },
   "dependencies": {
     "@chi0307/axios-wrapper": "^1.0.2",
-    "axios": "^1.8.2",
+    "axios": "^1.8.3",
     "dotenv": "^16.4.7",
-    "typia": "^8.0.0"
+    "typia": "^8.0.2"
   },
   "keywords": [
     "Node.js",
