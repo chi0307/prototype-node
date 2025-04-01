@@ -41,7 +41,7 @@
     "@types/node": "^22.13.14",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
-    "eslint-import-resolver-typescript": "^4.2.7",
+    "eslint-import-resolver-typescript": "^4.3.1",
     "eslint-plugin-import-x": "^4.6.1",
     "eslint-plugin-perfectionist": "^4.10.1",
     "eslint-plugin-prettier": "^5.2.5",
@@ -53,16 +53,16 @@
     "prettier": "^3.5.3",
     "ts-jest": "^29.2.6",
     "ts-patch": "^3.3.0",
-    "tsc-alias": "^1.8.11",
+    "tsc-alias": "^1.8.13",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.28.0"
+    "typescript-eslint": "^8.29.0"
   },
   "dependencies": {
     "@chi0307/axios-wrapper": "^1.0.2",
     "axios": "^1.8.4",
     "dotenv": "^16.4.7",
-    "typia": "^8.0.4"
+    "typia": "^8.1.1"
   },
   "keywords": [
     "Node.js",
