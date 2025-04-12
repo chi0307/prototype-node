@@ -38,9 +38,9 @@
     "@tsconfig/node22": "^22.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.14",
-    "@types/node": "^22.14.0",
+    "@types/node": "^22.14.1",
     "eslint": "^9.24.0",
-    "eslint-config-prettier": "^10.1.1",
+    "eslint-config-prettier": "^10.1.2",
     "eslint-import-resolver-typescript": "^4.3.2",
     "eslint-plugin-import-x": "^4.10.2",
     "eslint-plugin-perfectionist": "^4.11.0",
@@ -61,7 +61,7 @@
   "dependencies": {
     "@chi0307/axios-wrapper": "^1.0.2",
     "axios": "^1.8.4",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "typia": "^9.1.1"
   },
   "keywords": [
