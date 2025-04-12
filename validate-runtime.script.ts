@@ -9,13 +9,16 @@ function run(command: string): number {
   return result.status ?? 1
 }
 
-console.log('[validate-safe] Running validation...')
-const code = run('pnpm run build-only && node dist/index.js')
+console.log('Running validation...')
+const developCode = run('pnpm run dev')
+const productionCode = run('pnpm run build-only && pnpm start')
 
-if (code !== 0) {
-  console.error(`[validate-safe] ❌ Validation failed with code ${code}`)
+if (developCode !== 0) {
+  console.error(`❌ Validation develop script failed with code ${developCode}`)
+  process.exit(1)
+} else if (productionCode !== 0) {
+  console.error(`❌ Validation production script failed with code ${productionCode}`)
+  process.exit(1)
 } else {
-  console.log('[validate-safe] ✅ Validation passed')
+  process.exit(0)
 }
-
-process.exit(code)

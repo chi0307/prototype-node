@@ -28,4 +28,4 @@
 - validate-runtime.ts
 - package.json => `scripts.validate-runtime`
 - package.json => `scripts.upgrade-packages-latest`
-- .github/workflows/check.yml => `run: pnpm run build && node dist/index.js`
+- .github/workflows/check.yml => `run: pnpm validate-runtime`
