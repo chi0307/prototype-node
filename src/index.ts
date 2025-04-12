@@ -2,9 +2,8 @@ import 'dotenv/config'
 
 import { AxiosError } from 'axios'
 
+import { getUsers } from '@/apis/example'
 import { message } from '@/example'
-
-import { getUsers } from './apis/example'
 
 console.log('NODE_ENV', process.env['NODE_ENV'])
 console.log(message)

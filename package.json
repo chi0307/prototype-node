@@ -13,7 +13,7 @@
   "scripts": {
     "clear": "rm -rf dist coverage typia-generated",
     "dev:typia": "typia generate --project tsconfig.app.json --input src --output typia-generated",
-    "dev:start": "tsx --tsconfig ./tsconfig.app.json typia-generated/index.ts",
+    "dev:start": "tsx --tsconfig ./tsconfig.dev.json src/index.ts",
     "dev": "nodemon --delay 3 --watch src --ext ts --exec \"run-s dev:typia dev:start\"",
     "build": "run-s clear build-only",
     "build-only": "tsc --build --force tsconfig.app.json && tsc-alias -p tsconfig.app.json",
