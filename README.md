@@ -24,7 +24,8 @@
 
 這些內容是為了暴力檢查 runtime 是否在升級套件以後還是正常運作寫的內容，實際上複製出來的專案應該可以砍掉這些東西，不需要他們的存在
 
-- update-dependencies.yml => `run: pnpm upgrade-packages-latest` 這行
+- .github/workflows/update-dependencies.yml => `run: pnpm upgrade-packages-latest`
 - validate-runtime.ts
 - package.json => `scripts.validate-runtime`
 - package.json => `scripts.upgrade-packages-latest`
+- .github/workflows/check.yml => `run: pnpm run build && node dist/index.js`
