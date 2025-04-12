@@ -28,7 +28,7 @@
     "test:watch": "jest --watchAll",
     "prepare": "ts-patch install && typia patch",
     "upgrade-packages": "ncu --doctor -u --doctorInstall \"pnpm install\" --doctorTest \"run-p check test\" --peer --target semver",
-    "validate-runtime": "tsx validate-runtime.ts",
+    "validate-runtime": "tsx validate-runtime.script.ts",
     "upgrade-packages-latest": "ncu --doctor -u --doctorInstall \"pnpm install\" --doctorTest \"run-p check test validate-runtime\" --peer --target latest"
   },
   "author": "Junchi Wang <benson26365156@gmail.com> (https://chi0307.github.io)",

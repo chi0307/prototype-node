@@ -81,13 +81,20 @@ export default tsEslint.config(
     },
   },
   {
+    files: ['*.script.ts', '*.config.ts'],
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.node.json',
+      },
+    },
+  },
+  {
     ignores: [
       '**/dist/*',
       'eslint.config.js',
       '*.timestamp-*.mjs',
       'jest.config.cjs',
       '**/coverage/*',
-      'validate-runtime.ts',
     ],
   },
 )
