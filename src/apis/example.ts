@@ -1,7 +1,7 @@
 import { createApiClient } from '@chi0307/axios-wrapper'
 import typia from 'typia'
 
-const apiClient = createApiClient('https://5a019f7b-11a8-43f8-8dad-fc6d4303ee3d.mock.pstmn.io')
+const apiClient = createApiClient('https://46f37615-e250-4ecd-938c-d6efb6d0b459.mock.pstmn.io')
 
 interface User {
   id: number
