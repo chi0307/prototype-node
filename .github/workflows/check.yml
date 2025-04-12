@@ -30,8 +30,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: check
+      - name: Check
         run: pnpm run check
 
-      - name: test
+      - name: Test
         run: pnpm run test
+
+      - name: Check Runtime
+        run: pnpm run build && node dist/index.js
