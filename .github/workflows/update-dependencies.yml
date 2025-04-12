@@ -33,10 +33,12 @@ jobs:
           node-version: 22
           cache: 'pnpm'
 
+      - name: Install dependencies
+        run: pnpm install
+
       - name: Upgrade npm packages
-        run: |
-          pnpm install
-          pnpm run upgrade-packages
+        # run: pnpm upgrade-packages
+        run: pnpm upgrade-packages-latest
 
       - name: Set branch name
         id: set_branch_name

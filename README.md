@@ -17,3 +17,14 @@
 ## 注意事項
 
 - `ts-jest@29.3.0` 以後需要把 tsconfig.json 裡面的 `compilerOptions.isolatedModules` 設定成 false，typia 才有辦法正常運作，是跟那個改版的 `isolatedModules transform option is deprecated` 有關，不然會導致在測試中的 typia 運作失敗
+
+## 複製的專案可以刪掉的內容
+
+### 暴力檢查 package 升級的功能
+
+這些內容是為了暴力檢查 runtime 是否在升級套件以後還是正常運作寫的內容，實際上複製出來的專案應該可以砍掉這些東西，不需要他們的存在
+
+- update-dependencies.yml => `run: pnpm upgrade-packages-latest` 這行
+- validate-runtime.ts
+- package.json => `scripts.validate-runtime`
+- package.json => `scripts.upgrade-packages-latest`

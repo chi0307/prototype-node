@@ -87,6 +87,7 @@ export default tsEslint.config(
       '*.timestamp-*.mjs',
       'jest.config.cjs',
       '**/coverage/*',
+      'validate-runtime.ts',
     ],
   },
 )
