@@ -82,7 +82,7 @@ importers:
         specifier: ^3.3.0
         version: 3.3.0
       tsc-alias:
-        specifier: ^1.8.13
+        specifier: 1.8.13
         version: 1.8.13
       tsx:
         specifier: ^4.19.3
