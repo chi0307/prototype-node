@@ -90,11 +90,12 @@ export default tsEslint.config(
   },
   {
     ignores: [
-      '**/dist/*',
+      'dist',
+      'coverage',
+      'typia-generated',
       'eslint.config.js',
       '*.timestamp-*.mjs',
       'jest.config.cjs',
-      '**/coverage/*',
     ],
   },
 )
