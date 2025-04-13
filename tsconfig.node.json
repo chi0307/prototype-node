@@ -3,6 +3,7 @@
   "include": ["*.config.ts", "*.script.ts"],
   "compilerOptions": {
     "noEmit": true,
-    "rootDir": "."
+    "rootDir": ".",
+    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.node.tsbuildinfo"
   }
 }

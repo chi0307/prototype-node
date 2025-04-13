@@ -12,7 +12,7 @@
   "compilerOptions": {
     "lib": ["ESNext"], // 使用 ESNext 標準庫（例如支援最新的 `Promise.allSettled` 等功能）
     "composite": true, // 啟用增量編譯，生成 `.tsbuildinfo` 文件來加快重建速度
-    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.tsbuildinfo", // 指定增量編譯資訊的輸出路徑
+    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.app.tsbuildinfo", // 指定增量編譯資訊的輸出路徑
     "baseUrl": "./", // 設定模組解析的根路徑，通常設為專案的根目錄
     "paths": {
       "@/*": ["src/*"] // 路徑別名設定，讓 `@/` 對應到 `src/` 資料夾
