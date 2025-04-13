@@ -10,14 +10,10 @@ function run(command: string): number {
 }
 
 console.log('Running validation...')
-const developCode = run('pnpm run dev')
-const productionCode = run('pnpm run build-only && pnpm start')
+const code = run('pnpm run build-only && pnpm start')
 
-if (developCode !== 0) {
-  console.error(`❌ Validation develop script failed with code ${developCode}`)
-  process.exit(1)
-} else if (productionCode !== 0) {
-  console.error(`❌ Validation production script failed with code ${productionCode}`)
+if (code !== 0) {
+  console.error(`❌ Validation runtime failed with code ${code}`)
   process.exit(1)
 } else {
   process.exit(0)

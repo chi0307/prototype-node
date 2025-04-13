@@ -89,13 +89,6 @@ export default tsEslint.config(
     },
   },
   {
-    ignores: [
-      'dist',
-      'coverage',
-      'typia-generated',
-      'eslint.config.js',
-      '*.timestamp-*.mjs',
-      'jest.config.cjs',
-    ],
+    ignores: ['dist', 'coverage', 'eslint.config.js', '*.timestamp-*.mjs', 'jest.config.cjs'],
   },
 )

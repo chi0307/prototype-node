@@ -8,9 +8,6 @@ dist
 .jest-cache
 coverage
 
-# typia 編譯出來的東西
-/typia-generated
-
 .env
 .env.*
 
