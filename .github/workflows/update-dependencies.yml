@@ -58,5 +58,5 @@ jobs:
           # (沒增加的話這邊會失敗)
           token: ${{ secrets.MACHINE_USER_PAT }}
           assignees: ${{ github.actor }}
-          commit-message: 'upgrade: github auto upgrade all packages to latest'
+          commit-message: 'build: github auto upgrade packages'
           delete-branch: true
