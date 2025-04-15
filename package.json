@@ -20,6 +20,7 @@
     "postinstall": "pnpm run codegen",
     "codegen": "pnpm run \"/^codegen:.*/\" && tsc -p tsconfig.codegen.json",
     "codegen:graphql-example": "graphql-codegen --config .graphqlrc.yaml -p example",
+    "codegen:openapi-example": "openapi-ts -f openapi.config.ts  -i ./example.openapi.yaml -o ./src/generated/openapi-example",
     "check": "pnpm run \"/^check:.*/\"",
     "check:lint": "eslint .",
     "check:tsc": "tsc --noEmit",
@@ -43,6 +44,7 @@
     "@graphql-codegen/typescript": "^4.1.6",
     "@graphql-codegen/typescript-operations": "^4.6.0",
     "@graphql-typed-document-node/core": "^3.2.0",
+    "@hey-api/openapi-ts": "^0.66.4",
     "@tsconfig/node22": "^22.0.1",
     "@tsconfig/strictest": "^2.0.5",
     "@types/jest": "^29.5.14",
@@ -68,10 +70,12 @@
   },
   "dependencies": {
     "@chi0307/axios-wrapper": "^1.0.2",
+    "@hey-api/client-fetch": "^0.10.0",
     "axios": "^1.8.4",
     "dotenv": "^16.5.0",
     "graphql-request": "^7.1.2",
-    "typia": "^9.1.1"
+    "typia": "^9.1.1",
+    "zod": "^3.24.2"
   },
   "keywords": [
     "Node.js",
