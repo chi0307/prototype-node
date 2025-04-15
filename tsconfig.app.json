@@ -7,7 +7,8 @@
     "**/*.test.ts",
     "src/test/**/*",
     "jest.config.cjs",
-    "coverage"
+    "coverage",
+    "src/generated/**/*"
   ],
   "compilerOptions": {
     "lib": ["ESNext"], // 使用 ESNext 標準庫（例如支援最新的 `Promise.allSettled` 等功能）
@@ -36,5 +37,6 @@
   },
   "tsc-alias": {
     "resolveFullPaths": true
-  }
+  },
+  "references": [{ "path": "./tsconfig.codegen.json" }]
 }

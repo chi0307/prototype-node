@@ -11,5 +11,8 @@ coverage
 .env
 .env.*
 
+# graphql or openapi codegen 出來的檔案
+src/generated
+
 !.gitkeep
 !.env.example
