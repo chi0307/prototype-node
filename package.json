@@ -69,9 +69,9 @@
     "typescript-eslint": "^8.31.0"
   },
   "dependencies": {
-    "@chi0307/axios-wrapper": "^1.0.2",
+    "@chi0307/axios-wrapper": "^2.0.0",
     "@hey-api/client-fetch": "^0.10.0",
-    "axios": "^1.8.4",
+    "axios": "^1.9.0",
     "dotenv": "^16.5.0",
     "graphql-request": "^7.1.2",
     "typia": "^9.1.1",
