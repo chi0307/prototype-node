@@ -18,7 +18,7 @@
     "start": "node dist/index.js",
     "format": "eslint . --fix",
     "postinstall": "pnpm run codegen",
-    "codegen": "pnpm run \"/^codegen:.*/\" && tsc -p tsconfig.codegen.json",
+    "codegen": "pnpm run \"/^codegen:.*/\"",
     "codegen:graphql-example": "graphql-codegen --config .graphqlrc.yaml -p example",
     "codegen:openapi-example": "openapi-ts -f openapi.config.ts  -i ./example.openapi.yaml -o ./src/generated/openapi-example",
     "check": "pnpm run \"/^check:.*/\"",
