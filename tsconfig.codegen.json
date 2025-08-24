@@ -3,8 +3,12 @@
   "compilerOptions": {
     "allowImportingTsExtensions": false,
     "noEmit": false,
-    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.codegen.tsbuildinfo"
+    "tsBuildInfoFile": "node_modules/.tmp/tsconfig.codegen.tsbuildinfo",
+    // 因為 heyapi codegen 出來的檔案中有 undefined 附值給 object optional key 的問題，所以這邊把 exactOptionalPropertyTypes 先關掉，假如之後 codegen 有改可以再刪掉這個檔案
+    // https://github.com/hey-api/openapi-ts/issues/2262
+    // 後續如果要重新打開的時候把 include 設定成 ["src/generated/**/graphql.ts"]
+    "exactOptionalPropertyTypes": false
   },
-  "include": ["src/generated/**/generated.ts"],
+  "include": ["src/generated"],
   "exclude": []
 }
